@@ -1,0 +1,36 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+/* Branding and header */
+h1 {
+  margin-bottom: 30px !important;
+}
+h1, .navbar-brand {
+  color: orange !important;
+}
+/* Table elements */
+thead th {
+  text-align: center;
+}
+tbody tr {
+  cursor: pointer;
+  cursor: hand;
+}
+tbody a:hover {
+  text-decoration: none;
+}
+/* Footer */
+footer {
+  text-align: center;
+}
+footer img {
+  width: 70px;
+}
+/* Angular loading */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
