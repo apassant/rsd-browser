@@ -17,8 +17,3 @@ filterSelected = () ->
 rsd = angular.module 'RSD', ['ui.bootstrap', 'ui.bootstrap.popover']
 rsd.controller 'RSDController', RSDController
 rsd.filter 'filterSelected', filterSelected
-
-## Popover
-#$('.details').popover({
-#    'trigger' : 'hover'
-#})
