@@ -69,7 +69,8 @@
               <tr ng-repeat="release in releases | filter:filter | filterSelected:selected" ng-click="release.selected = !release.selected">
                 <td><input type="checkbox" ng-click="$event.stopPropagation();" ng-model="release.selected"/></td>
                 <td ng-bind-html="trustAsHTML(release.artist)"></td>
-                <td><a ng-bind-html="trustAsHTML(release.title)" popover="{{release.details}}" popover-placement="bottom" popover-trigger="mouseenter"></a></td>
+                <td ng-show="release.details"><a ng-bind-html="trustAsHTML(release.title)" popover="{{release.details}}" popover-placement="bottom" popover-trigger="mouseenter"></a></td>
+                <td ng-show="!release.details" ng-bind-html="trustAsHTML(release.title)"</td>
                 <td class="format" ng-bind-html="trustAsHTML(release.format)"></td>
                 <td ng-bind-html="trustAsHTML(release.label)"></td>
               </tr>
